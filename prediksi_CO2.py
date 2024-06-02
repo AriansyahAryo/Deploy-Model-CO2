@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-model = pickle.load(open('prediksi_CO2.sav', 'rb'))
+model = pickle.load(open('prediksi_CO2.sav','rb'))
 
 df = pd.read_excel("CO2 dataset.xlsx")
 df['Year'] = pd.to_datetime(df['Year'], format='%Y')
